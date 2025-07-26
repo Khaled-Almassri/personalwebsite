@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+
+
+@theme {
+  --font-display: "Poppins", sans-serif;
+  --color-c1: oklch(72.07% 0.178 40.61);
+  --color-c2: oklch(35.52% 0.041 238.65);
+  --color-c3: oklch(56.32% 0.076 233.29);
+  --color-c4: oklch(87.92% 0.000 0);
+  --color-c5: oklch(0.2321 0.0264 226.41);
+}
+html{
+  margin: 0;
+  font-family: var(--font-display);
+  
+  font-size: 26px;
+  font-weight: 600;
+  scrollbar-width: none;
+}
+
+body{
+  background: linear-gradient(to bottom, #0F2027, #203A43, #2C5364);
+  background-repeat: no-repeat; /* Add this */
+  background-size: cover; 
+}
+
+
+
+
+/* marquee.css */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+/* Optional pause on hover 
+.marquee:hover {
+  animation-play-state: paused;
+}
+*/
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Close button */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Overlay content */
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.overlay-content a {
+  color: #39ff14;
+  font-size: 45px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.overlay-content a:hover {
+  color: #fff;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1101; /* Always above overlay */
+}
+
+.hamburger span {
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Optional: hide hamburger when overlay is open */
+.overlay.show ~ .hamburger {
+  display: none;
+}
+
+.line {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.command-line {
+  color: #00FF41;
+}
+
+.input-form {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.prompt {
+  color: #00FF41;
+  user-select: none;
+}
+
+.input-field {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #00FF41;
+  font-family: monospace;
+  width: 90%;
+  font-size: 1rem;
+}
