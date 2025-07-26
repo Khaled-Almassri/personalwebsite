@@ -79,7 +79,7 @@ export default function Timeline() {
                 >
                   <div className="w-5/12"></div>
                   <div
-                    className={`w-5/12 px-1 py-4 text-[20px] ${
+                    className={`w-5/12 px-1 py-4 text-[18px] ${
                       isLeft ? "text-right" : "text-left"
                     }`}
                   >

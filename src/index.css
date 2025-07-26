@@ -21,7 +21,7 @@ html{
 
 body{
   background: linear-gradient(to bottom, #0F2027, #203A43, #2C5364);
-  background-repeat: no-repeat; /* Add this */
+  background-repeat: no-repeat;
   background-size: cover; 
 }
 
@@ -84,77 +84,3 @@ body{
   z-index: 1001;
 }
 
-/* Overlay content */
-.overlay-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.overlay-content a {
-  color: #39ff14;
-  font-size: 45px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.overlay-content a:hover {
-  color: #fff;
-}
-
-/* Hamburger menu icon */
-.hamburger {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1101; /* Always above overlay */
-}
-
-.hamburger span {
-  height: 4px;
-  background: #fff;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* Optional: hide hamburger when overlay is open */
-.overlay.show ~ .hamburger {
-  display: none;
-}
-
-.line {
-  margin: 0;
-  white-space: pre-wrap;
-}
-
-.command-line {
-  color: #00FF41;
-}
-
-.input-form {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-}
-
-.prompt {
-  color: #00FF41;
-  user-select: none;
-}
-
-.input-field {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: #00FF41;
-  font-family: monospace;
-  width: 90%;
-  font-size: 1rem;
-}

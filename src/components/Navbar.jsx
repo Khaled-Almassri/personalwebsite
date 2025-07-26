@@ -79,7 +79,7 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="text-c4 focus:outline-none"
               >
-                {menuOpen ? <X size={24} /> : <Menu size={24} />}
+                {menuOpen ? <X size={32} /> : <Menu size={32} />}
               </button>
             </div>
           </div>

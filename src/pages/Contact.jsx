@@ -53,7 +53,7 @@ const ContactPage = () => {
                   <p className="mt-3 text-lg font-semibold">{contact.label}</p>
                 </div>
 
-                <p className="text-sm text-c4 mt-4 break-all">
+                <p className="text-[18px] text-c4 mt-4 break-all">
                   {contact.value}
                 </p>
               </a>
