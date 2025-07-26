@@ -22,7 +22,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<Cv />} />
-        <Route path="/contact" element={<DoNotExist />} />
+        <Route path="/*" element={<DoNotExist />} />
       </Routes>
       <Footer />
     </Router>
