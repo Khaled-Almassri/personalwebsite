@@ -53,13 +53,13 @@ export default function Home() {
         </p>
         <p>
           By day, I work as a Survey Programmer at Ventures Middle East,
-          automating data processes and deploying interactive systems. On
+          automating data processes and building surveys and dashboards. On
           evenings and weekends, I dive into cloud labs, infrastructure as code,
           and personal projects that push my learning forward.
         </p>
         <p>
           My goal is to design and implement secure, resilient, and automated
-          cloud solutions that solve real-world problems — and to grow every day
+          cloud solutions that solve real-world problems and to grow every day
           doing what I love.
         </p>
       </div>
